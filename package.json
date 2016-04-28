@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-dvpnt",
+  "version": "0.0.1",
+  "description": "eslint config for dvpnt projects",
+  "main": "index.js",
+  "author": "Aleksey Timchenko <flegmatik.bel@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvpnt/eslint-config-dvpnt.git"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ]
+}
