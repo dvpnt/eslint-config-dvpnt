@@ -66,7 +66,6 @@ module.exports = {
 			"vars": "all",
 			"args": "after-used"
 		}],
-		"no-sync": "error",
 
 		// Node
 		"no-new-require": "error",
@@ -107,10 +106,10 @@ module.exports = {
 		"consistent-this": ["error", "self"],
 		"id-blacklist": ["error", "cb"],
 		"id-length": ["error", {
-			"min": 2,
+			"min": 1,
 			"max": 32,
 			"properties": "never",
-			"exceptions": ["_", "$", "e", "i"]
+			"exceptions": []
 		}],
 		"key-spacing": ["error", {
 			"beforeColon": false,
