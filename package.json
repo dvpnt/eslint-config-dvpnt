@@ -12,5 +12,14 @@
   "keywords": [
     "eslint",
     "config"
-  ]
+  ],
+  "scripts": {
+    "lint": "eslint ./"
+  },
+  "devDependencies": {
+    "eslint": "3.5.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=3.5.0"
+  }
 }
