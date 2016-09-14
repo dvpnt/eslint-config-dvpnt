@@ -1,2 +1,5 @@
-.npmignore
+*.log
 .eslintrc.json
+.npmignore
+.gitignore
+.travis.yml
