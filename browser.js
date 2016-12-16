@@ -10,6 +10,7 @@ module.exports = {
 		'no-script-url': 'error',
 		'no-alert': 'error',
 		'no-debugger': 'error',
-		'max-params': 'off'
+		'max-params': 'off',
+		'no-restricted-globals': ['error', 'event', 'self']
 	}
 };
