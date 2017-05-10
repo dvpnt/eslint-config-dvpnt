@@ -3,6 +3,7 @@
 module.exports = {
 	'plugins': ['react-dvpnt'],
 	'extends': [
+		'./base.js',
 		'eslint-config-airbnb/rules/react',
 		'eslint-config-airbnb/rules/react-a11y'
 	],
