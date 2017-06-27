@@ -14,6 +14,6 @@
     "config"
   ],
   "peerDependencies": {
-    "eslint": ">=4.1.1"
+    "eslint": ">=3.19.0"
   }
 }
