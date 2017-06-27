@@ -1,5 +1,5 @@
 {
-	"extends": "./index.js",
+	"extends": "./packages/eslint-config-dvpnt/index.js",
 	"rules": {
 		"quote-props": ["error", "consistent"]
 	}

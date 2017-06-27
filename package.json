@@ -1,32 +1,11 @@
 {
-  "name": "eslint-config-dvpnt",
-  "version": "1.4.2",
-  "description": "eslint config for dvpnt projects",
-  "main": "index.js",
-  "author": "Aleksey Timchenko <flegmatik.bel@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dvpnt/eslint-config-dvpnt.git"
-  },
-  "keywords": [
-    "eslint",
-    "config"
-  ],
+  "name": "eslint-config-dvpnt-private",
+  "private": true,
+  "version": "1.0.0",
   "scripts": {
     "lint": "eslint ./"
   },
   "devDependencies": {
-    "eslint": "3.19.0"
-  },
-  "peerDependencies": {
-    "eslint": ">=3.19.0",
-    "eslint-plugin-import": "2.2.0",
-    "eslint-plugin-jsx-a11y": "4.0.0",
-    "eslint-plugin-react": "6.9.0",
-    "eslint-plugin-react-dvpnt": "1.0.1"
-  },
-  "dependencies": {
-    "eslint-config-airbnb": "14.1.0"
+    "eslint": "4.1.1"
   }
 }
