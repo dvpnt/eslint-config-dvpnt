@@ -3,13 +3,20 @@
 module.exports = {
 	'plugins': ['react-dvpnt'],
 	'extends': [
-		'dvpnt',
+		'dvpnt/base',
 		'eslint-config-airbnb/rules/react',
 		'eslint-config-airbnb/rules/react-a11y'
 	],
 	'env': {
 		'es6': true,
-		'browser': true
+		'commonjs': true,
+		// for server side rendering
+		'node': true
+	},
+	'globals': {
+		// enable only these globals for browser env
+		'window': true,
+		'document': true
 	},
 	'rules': {
 		'react/jsx-indent': ['error', 'tab'],
