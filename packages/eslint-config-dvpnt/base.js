@@ -103,6 +103,9 @@ module.exports = {
 		}],
 		'comma-style': ['error', 'last'],
 		'consistent-this': ['error', 'self'],
+		'id-match': ['error', '^([a-zA-Z0-9\\_\\$]+|[а-яА-Я0-9\\_\\$]+)$', {
+			'properties': true
+		}],
 		'id-blacklist': ['error', 'cb'],
 		'id-length': ['error', {
 			'min': 1,
