@@ -22,6 +22,6 @@
   },
   "dependencies": {
     "eslint-config-airbnb": "14.1.0",
-    "eslint-config-dvpnt": "1.5.1"
+    "eslint-config-dvpnt": "1.6.0"
   }
 }
