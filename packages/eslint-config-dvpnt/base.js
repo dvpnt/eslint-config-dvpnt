@@ -1,8 +1,10 @@
-'use strict';
-
 module.exports = {
+	'env': {
+		'es6': true
+	},
+
 	'rules': {
-		'strict': ['error', 'global'],
+		'strict': ['error', 'never'],
 
 		// Possible Errors
 		'comma-dangle': ['error', 'never'],
@@ -23,9 +25,7 @@ module.exports = {
 		// Best Practices
 		'default-case': 'error',
 		'dot-location': ['error', 'property'],
-		'dot-notation': ['error', {
-			'allowKeywords': false
-		}],
+		'dot-notation': 'error',
 		'eqeqeq': ['error', 'smart'],
 		'guard-for-in': 'error',
 		'no-eval': 'error',
@@ -74,7 +74,9 @@ module.exports = {
 		'quotes': ['error', 'single', 'avoid-escape'],
 		'indent': ['error', 'tab', {
 			'SwitchCase': 1,
-			'VariableDeclarator': 1
+			'VariableDeclarator': 1,
+			'MemberExpression': 1,
+			'ArrayExpression': 'first'
 		}],
 		'max-len': ['error', {
 			'code': 80,
@@ -87,7 +89,7 @@ module.exports = {
 		'no-multiple-empty-lines': ['error', {
 			'max': 3,
 			'maxBOF': 0,
-			'maxEOF': 1
+			'maxEOF': 0
 		}],
 		'camelcase': ['error', {
 			'properties': 'never'

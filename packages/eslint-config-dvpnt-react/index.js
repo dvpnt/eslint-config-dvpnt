@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
 	'plugins': ['react-dvpnt'],
 	'extends': [
@@ -8,7 +6,6 @@ module.exports = {
 		'eslint-config-airbnb/rules/react-a11y'
 	],
 	'env': {
-		'es6': true,
 		'commonjs': true,
 		// for server side rendering
 		'node': true
