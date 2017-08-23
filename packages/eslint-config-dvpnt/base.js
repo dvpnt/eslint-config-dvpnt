@@ -73,10 +73,7 @@ module.exports = {
 		'semi': ['error', 'always'],
 		'quotes': ['error', 'single', 'avoid-escape'],
 		'indent': ['error', 'tab', {
-			'SwitchCase': 1,
-			'VariableDeclarator': 1,
-			'MemberExpression': 1,
-			'ArrayExpression': 'first'
+			'SwitchCase': 1
 		}],
 		'max-len': ['error', {
 			'code': 80,
