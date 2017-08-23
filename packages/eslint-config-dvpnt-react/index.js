@@ -23,6 +23,7 @@ module.exports = {
 		'react/no-array-index-key': 'off',
 		'react/no-danger': 'off',
 		'react/prefer-es6-class': 'off',
+		'jsx-a11y/no-autofocus': 'off',
 
 		'react-dvpnt/jsx-require-buttons-type': ['error', 'always']
 	}
