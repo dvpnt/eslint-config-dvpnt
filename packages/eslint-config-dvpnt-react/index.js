@@ -26,5 +26,10 @@ module.exports = {
 		'jsx-a11y/no-autofocus': 'off',
 
 		'react-dvpnt/jsx-require-buttons-type': ['error', 'always']
+	},
+	'settings': {
+		'react': {
+			'version': '15.5'
+		}
 	}
 };
