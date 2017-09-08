@@ -1,9 +1,10 @@
 module.exports = {
+	'parser': 'babel-eslint',
 	'plugins': ['react-dvpnt'],
 	'extends': [
-		'dvpnt/base',
 		'eslint-config-airbnb/rules/react',
-		'eslint-config-airbnb/rules/react-a11y'
+		'eslint-config-airbnb/rules/react-a11y',
+		'dvpnt/base'
 	],
 	'env': {
 		'commonjs': true,
@@ -22,7 +23,6 @@ module.exports = {
 
 		'react/no-array-index-key': 'off',
 		'react/no-danger': 'off',
-		'react/prefer-es6-class': 'off',
 		'jsx-a11y/no-autofocus': 'off',
 
 		'react-dvpnt/jsx-require-buttons-type': ['error', 'always']

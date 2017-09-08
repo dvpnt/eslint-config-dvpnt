@@ -2,7 +2,12 @@ module.exports = {
 	'env': {
 		'es6': true
 	},
-
+	'parserOptions': {
+		'ecmaVersion': 2017,
+		'ecmaFeatures': {
+			'experimentalObjectRestSpread': true
+		}
+	},
 	'rules': {
 		'strict': ['error', 'never'],
 
@@ -152,7 +157,11 @@ module.exports = {
 			'before': false,
 			'after': true
 		}],
-		'space-before-function-paren': ['error', 'never'],
+		'space-before-function-paren': ['error', {
+			'anonymous': 'never',
+			'named': 'never',
+			'asyncArrow': 'always'
+		}],
 		'space-in-parens': ['error', 'never'],
 		'space-infix-ops': 'error',
 		'space-unary-ops': ['error', {
@@ -161,6 +170,17 @@ module.exports = {
 		}],
 		'spaced-comment': ['error', 'always', {
 			'exceptions': ['*']
-		}]
+		}],
+
+		// ES next
+		'no-await-in-loop': 'error',
+		'require-await': 'error',
+		'no-var': 'error',
+		'one-var': ['error', 'never'],
+		'prefer-const': 'error',
+		'no-const-assign': 'error',
+		'arrow-body-style': ['error', 'as-needed'],
+		'arrow-parens': ['error', 'always'],
+		'class-methods-use-this': 'off'
 	}
 };
