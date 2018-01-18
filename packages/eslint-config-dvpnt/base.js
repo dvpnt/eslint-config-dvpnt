@@ -181,6 +181,11 @@ module.exports = {
 		'no-const-assign': 'error',
 		'arrow-body-style': ['error', 'as-needed'],
 		'arrow-parens': ['error', 'always'],
-		'class-methods-use-this': 'off'
+		'arrow-spacing': 'error',
+		'class-methods-use-this': 'off',
+		'prefer-arrow-callback': 'error',
+		'no-return-await': 'error',
+		'rest-spread-spacing': ['error', 'never'],
+		'object-shorthand': ['error', 'properties']
 	}
 };
