@@ -4,7 +4,7 @@
 dvpnt eslint react config
 
 ### Install
-    $ npm install --save-dev eslint eslint-config-dvpnt eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-dvpnt
+    $ npm install --save-dev eslint eslint-config-dvpnt-react
 
 
 Add following line in your `.eslintrc` file:
