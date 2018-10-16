@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dvpnt-react",
-  "version": "2.3.0",
+  "version": "3.0.1",
   "description": "eslint config for react dvpnt projects",
   "main": "index.js",
   "author": "Aleksey Timchenko <flegmatik.bel@gmail.com>",
@@ -13,16 +13,18 @@
     "eslint",
     "config"
   ],
+  "scripts": {
+    "postinstall": "install-peerdeps eslint-config-dvpnt-react --dev --only-peers"
+  },
   "peerDependencies": {
-    "babel-eslint": "7.2.3",
-    "eslint": ">=4.5.0",
-    "eslint-plugin-import": "2.7.0",
-    "eslint-plugin-jsx-a11y": "5.1.1",
-    "eslint-plugin-react": "7.3.0",
-    "eslint-plugin-react-dvpnt": "1.1.1"
+    "babel-eslint": "10.0.1",
+    "eslint": ">=5.7.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.11.1"
   },
   "dependencies": {
-    "eslint-config-airbnb": "15.1.0",
-    "eslint-config-dvpnt": "2.2.0"
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-dvpnt": "3.0.0",
+    "install-peerdeps": "1.9.0"
   }
 }

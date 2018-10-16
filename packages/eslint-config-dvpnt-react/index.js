@@ -1,35 +1,46 @@
 module.exports = {
-	'parser': 'babel-eslint',
-	'plugins': ['react-dvpnt'],
-	'extends': [
+	parser: require.resolve('babel-eslint'),
+
+	extends: [
 		'eslint-config-airbnb/rules/react',
 		'eslint-config-airbnb/rules/react-a11y',
-		'dvpnt/base'
-	],
-	'env': {
-		'commonjs': true,
+		'eslint-config-dvpnt/base'
+	].map(require.resolve),
+
+	env: {
+		commonjs: true,
 		// for server side rendering
-		'node': true
+		node: true
 	},
-	'globals': {
+
+	globals: {
 		// enable only these globals for browser env
-		'window': true,
-		'document': true
+		window: true,
+		document: true
 	},
-	'rules': {
+
+	rules: {
 		'react/jsx-indent': ['error', 'tab'],
 		'react/jsx-indent-props': ['error', 'tab'],
-		'react/forbid-prop-types': ['error', {'forbid': ['object', 'array']}],
+		'react/forbid-prop-types': ['error', {forbid: ['object', 'array']}],
 
 		'react/no-array-index-key': 'off',
 		'react/no-danger': 'off',
-		'jsx-a11y/no-autofocus': 'off',
+		'react/destructuring-assignment': 'off',
+		'react/jsx-one-expression-per-line': 'off',
 
-		'react-dvpnt/jsx-require-buttons-type': ['error', 'always']
+		'jsx-a11y/no-autofocus': 'off',
+		'jsx-a11y/no-static-element-interactions': 'off',
+		'jsx-a11y/click-events-have-key-events': 'off',
+
+		// is deprecated, use label-has-associated-control
+		'jsx-a11y/label-has-for': 'off',
+		'jsx-a11y/label-has-associated-control': 'error'
 	},
-	'settings': {
-		'react': {
-			'version': '15.5'
+
+	settings: {
+		react: {
+			version: '16.0'
 		}
 	}
 };
