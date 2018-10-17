@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dvpnt-react",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "description": "eslint config for react dvpnt projects",
   "main": "index.js",
   "author": "Aleksey Timchenko <flegmatik.bel@gmail.com>",
