@@ -150,7 +150,7 @@ module.exports = {
 		}],
 		'new-parens': 'error',
 		'no-lonely-if': 'error',
-		'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
+		'no-mixed-spaces-and-tabs': 'error',
 		'no-spaced-func': 'error',
 		'no-unneeded-ternary': 'error',
 		'no-whitespace-before-property': 'error',
