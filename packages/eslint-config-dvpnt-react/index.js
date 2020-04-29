@@ -21,9 +21,11 @@ module.exports = {
 	},
 
 	rules: {
+		'react/forbid-prop-types': ['error', {forbid: ['object', 'array']}],
 		'react/jsx-indent': ['error', 'tab'],
 		'react/jsx-indent-props': ['error', 'tab'],
-		'react/forbid-prop-types': ['error', {forbid: ['object', 'array']}],
+		'react/jsx-props-no-spreading': 'off',
+		'react/static-property-placement': ['error', 'static public field'],
 
 		'react/no-array-index-key': 'off',
 		'react/no-danger': 'off',
