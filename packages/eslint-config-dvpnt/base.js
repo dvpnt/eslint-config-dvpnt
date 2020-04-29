@@ -80,14 +80,18 @@ module.exports = {
 		'max-nested-callbacks': ['error', {max: 4}],
 		'max-params': ['error', {max: 16}],
 		'max-statements-per-line': ['error', {max: 1}],
+		'newline-before-return': 'error',
 		'newline-per-chained-call': ['error', {ignoreChainWithDepth: 5}],
+		'no-bitwise': 'off',
 		'no-mixed-operators': 'off',
-		'no-tabs': 'off',
-		'no-underscore-dangle': 'off',
 		'no-multiple-empty-lines': [
 			'error',
 			{max: 2, maxBOF: 0, maxEOF: 0}
 		],
+		'no-nested-ternary': 'off',
+		'no-plusplus': 'off',
+		'no-tabs': 'off',
+		'no-underscore-dangle': 'off',
 		'object-curly-newline': [
 			'error',
 			{
@@ -97,16 +101,13 @@ module.exports = {
 				ExportDeclaration: {multiline: true, consistent: true}
 			}
 		],
-		'object-property-newline': 'error',
 		'object-curly-spacing': ['error', 'never'],
+		'object-property-newline': 'error',
 		'operator-linebreak': ['error', 'after'],
-		'no-nested-ternary': 'off',
-		'no-plusplus': 'off',
 		'space-before-function-paren': [
 			'error',
 			{anonymous: 'never', named: 'never', asyncArrow: 'always'}
 		],
-		'no-bitwise': 'off',
 
 		// ES6
 		'no-confusing-arrow': 'off',
