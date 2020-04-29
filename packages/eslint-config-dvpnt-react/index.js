@@ -26,7 +26,7 @@ module.exports = {
 		'react/jsx-indent-props': ['error', 'tab'],
 		'react/jsx-props-no-spreading': 'off',
 		'react/static-property-placement': ['error', 'static public field'],
-		'react/state-in-constructor': ['error', 'never'],
+		'react/state-in-constructor': 'off',
 
 		'react/no-array-index-key': 'off',
 		'react/no-danger': 'off',
