@@ -11,7 +11,6 @@ module.exports = {
 	rules: {
 		// Possible Errors
 		'no-console': 'error',
-		'no-control-regex': 'off',
 		'no-extra-parens': [
 			'error',
 			'all',
@@ -27,22 +26,18 @@ module.exports = {
 			{boolean: true, number: true, string: true}
 		],
 		'no-param-reassign': 'off',
-		'require-await': 'error',
-		'wrap-iife': ['error', 'any'],
+		'wrap-iife': ['error', 'inside'],
 
 		// Variables
-		'no-use-before-define': [
-			'error',
-			{functions: false, classes: true, variables: true}
-		],
+		'no-shadow': 'off',
 
 		// Stylistic Issues
 		'array-bracket-newline': ['error', 'consistent'],
 		'array-element-newline': ['error', 'consistent'],
 		'block-spacing': ['error', 'never'],
 		'comma-dangle': ['error', 'never'],
-		'consistent-this': ['error', 'self'],
-		'func-names': 'off',
+		'consistent-this': 'off',
+		'func-names': ['error', 'as-needed'],
 		'func-style': ['error', 'declaration', {allowArrowFunctions: true}],
 		'function-paren-newline': ['error', 'multiline-arguments'],
 		'id-blacklist': ['error', 'cb'],
@@ -55,18 +50,20 @@ module.exports = {
 			'^([a-zA-Z0-9_$]+|[а-яА-Я0-9_$]+)$',
 			{properties: true}
 		],
-		'implicit-arrow-linebreak': 'off',
 		indent: ['error', 'tab', {SwitchCase: 1}],
 		'keyword-spacing': [
 			'error',
 			{before: true, after: true}
 		],
+		// Was deprecated in ESLint v4.0.0
+		// and replaced by the padding-line-between-statements rule.
+		'lines-around-directive': 'off',
 		'lines-between-class-members': [
 			'error',
 			'always',
 			{exceptAfterSingleLine: true}
 		],
-		'max-depth': ['error', {max: 3}],
+		'max-depth': ['error', {max: 4}],
 		'max-len': [
 			'error',
 			{
@@ -81,15 +78,19 @@ module.exports = {
 		'max-params': ['error', {max: 16}],
 		'max-statements-per-line': ['error', {max: 1}],
 		'newline-before-return': 'error',
-		'newline-per-chained-call': ['error', {ignoreChainWithDepth: 5}],
-		'no-bitwise': 'off',
-		'no-mixed-operators': 'off',
+		'newline-per-chained-call': ['error', {ignoreChainWithDepth: 2}],
+		'no-mixed-operators': [
+			'error',
+			{
+				groups: [['&', '|', '^', '~', '<<', '>>', '>>>']],
+				allowSamePrecedence: true
+			}
+		],
 		'no-multiple-empty-lines': [
 			'error',
 			{max: 2, maxBOF: 0, maxEOF: 0}
 		],
 		'no-nested-ternary': 'off',
-		'no-plusplus': 'off',
 		'no-tabs': 'off',
 		'no-underscore-dangle': 'off',
 		'object-curly-newline': [
@@ -113,6 +114,20 @@ module.exports = {
 		'no-confusing-arrow': 'off',
 		// discuss maybe ['error', 'always', {avoidExplicitReturnArrows: true}] ?
 		'object-shorthand': ['error', 'properties'],
+		'prefer-destructuring': [
+			'error',
+			{
+				VariableDeclarator: {
+					array: true,
+					object: true
+				},
+				AssignmentExpression: {
+					array: false,
+					object: false
+				}
+			},
+			{enforceForRenamedProperties: true}
+		],
 
 		// Imports
 		'import/order': [
