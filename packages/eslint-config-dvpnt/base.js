@@ -118,7 +118,7 @@ module.exports = {
 			'error',
 			{
 				VariableDeclarator: {
-					array: true,
+					array: false,
 					object: true
 				},
 				AssignmentExpression: {
