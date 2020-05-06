@@ -14,7 +14,11 @@ module.exports = {
 		'no-extra-parens': [
 			'error',
 			'all',
-			{ignoreJSX: 'all', nestedBinaryExpressions: false}
+			{
+				ignoreJSX: 'all',
+				nestedBinaryExpressions: false,
+				enforceForArrowConditionals: false
+			}
 		],
 
 		// Best Practices
