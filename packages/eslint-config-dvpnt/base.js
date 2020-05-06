@@ -125,8 +125,7 @@ module.exports = {
 					array: false,
 					object: false
 				}
-			},
-			{enforceForRenamedProperties: true}
+			}
 		],
 
 		// Imports
