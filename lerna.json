@@ -1,11 +1,11 @@
 {
-	"version": "independent",
-	"packages": [
-	  "packages/*"
-	],
-	"command": {
-	  "add": {
-		"exact": true
-	  }
-	}
+  "version": "independent",
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "add": {
+      "exact": true
+    }
   }
+}
