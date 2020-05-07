@@ -116,7 +116,6 @@ module.exports = {
 
 		// ES6
 		'no-confusing-arrow': 'off',
-		// discuss maybe ['error', 'always', {avoidExplicitReturnArrows: true}] ?
 		'object-shorthand': ['error', 'properties'],
 		'prefer-destructuring': [
 			'error',
