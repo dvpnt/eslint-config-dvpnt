@@ -4,7 +4,7 @@
 dvpnt eslint config
 
 ### Install
-    $ npm install --save-dev eslint eslint-config-dvpnt
+    $ npm install --save-dev eslint eslint-config-dvpnt eslint-plugin-import
 
 
 Add following line in your `.eslintrc` file:
