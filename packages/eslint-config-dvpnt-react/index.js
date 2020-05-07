@@ -4,6 +4,7 @@ module.exports = {
 	extends: [
 		'eslint-config-airbnb/rules/react',
 		'eslint-config-airbnb/rules/react-a11y',
+		'eslint-config-airbnb/rules/react-hooks',
 		'eslint-config-dvpnt/base'
 	].map(require.resolve),
 
@@ -20,9 +21,12 @@ module.exports = {
 	},
 
 	rules: {
+		'react/forbid-prop-types': ['error', {forbid: ['object', 'array']}],
 		'react/jsx-indent': ['error', 'tab'],
 		'react/jsx-indent-props': ['error', 'tab'],
-		'react/forbid-prop-types': ['error', {forbid: ['object', 'array']}],
+		'react/jsx-props-no-spreading': 'off',
+		'react/static-property-placement': ['error', 'static public field'],
+		'react/state-in-constructor': 'off',
 
 		'react/no-array-index-key': 'off',
 		'react/no-danger': 'off',
@@ -40,7 +44,7 @@ module.exports = {
 
 	settings: {
 		react: {
-			version: '16.0'
+			version: 'detect'
 		}
 	}
 };
