@@ -82,7 +82,7 @@ module.exports = {
 		'max-params': ['error', {max: 16}],
 		'max-statements-per-line': ['error', {max: 1}],
 		'newline-before-return': 'error',
-		'newline-per-chained-call': ['error', {ignoreChainWithDepth: 2}],
+		'newline-per-chained-call': 'off',
 		'no-mixed-operators': [
 			'error',
 			{
