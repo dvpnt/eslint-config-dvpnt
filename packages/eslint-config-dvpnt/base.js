@@ -137,8 +137,6 @@ module.exports = {
 			'error',
 			{
 				groups: [['builtin', 'external', 'internal']],
-				pathGroups: [{pattern: '@root/**', group: 'external', position: 'after'}],
-				pathGroupsExcludedImportTypes: ['builtin'],
 				'newlines-between': 'never'
 			}
 		]
