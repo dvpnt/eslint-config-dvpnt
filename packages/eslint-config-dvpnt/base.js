@@ -14,11 +14,7 @@ module.exports = {
 		'no-extra-parens': [
 			'error',
 			'all',
-			{
-				ignoreJSX: 'all',
-				nestedBinaryExpressions: false,
-				returnAssign: false
-			}
+			{ignoreJSX: 'all', nestedBinaryExpressions: false}
 		],
 
 		// Best Practices
@@ -34,6 +30,9 @@ module.exports = {
 
 		// Variables
 		'no-shadow': 'off',
+
+		// Errors
+		'no-await-in-loop': 'off',
 
 		// Stylistic Issues
 		'array-bracket-newline': ['error', 'consistent'],
@@ -54,6 +53,7 @@ module.exports = {
 			'^([a-zA-Z0-9_$]+|[а-яА-Я0-9_$]+)$',
 			{properties: true}
 		],
+		'implicit-arrow-linebreak': 'off',
 		indent: ['error', 'tab', {SwitchCase: 1}],
 		'keyword-spacing': [
 			'error',
@@ -81,7 +81,6 @@ module.exports = {
 		'max-nested-callbacks': ['error', {max: 4}],
 		'max-params': ['error', {max: 16}],
 		'max-statements-per-line': ['error', {max: 1}],
-		'newline-before-return': 'error',
 		'newline-per-chained-call': 'off',
 		'no-mixed-operators': [
 			'error',
@@ -95,6 +94,7 @@ module.exports = {
 			{max: 2, maxBOF: 0, maxEOF: 0}
 		],
 		'no-nested-ternary': 'off',
+		'no-plusplus': 'off',
 		'no-tabs': 'off',
 		'no-underscore-dangle': 'off',
 		'object-curly-newline': [
@@ -132,6 +132,16 @@ module.exports = {
 		],
 
 		// Imports
+		'import/extensions': ['error', 'never', {ignorePackages: true}],
+		'import/no-extraneous-dependencies': [
+			'error',
+			{
+				bundledDependencies: false,
+				devDependencies: true,
+				optionalDependencies: false,
+				packageDir: './'
+			}
+		],
 		'import/order': [
 			'error',
 			{
