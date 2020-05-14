@@ -59,6 +59,16 @@ module.exports = {
 			'error',
 			{before: true, after: true}
 		],
+		'padding-line-between-statements': [
+			'error',
+			{blankLine: 'always', prev: '*', next: 'return'},
+			{blankLine: 'always', prev: '*', next: 'block-like'},
+			{blankLine: 'always', prev: '*', next: 'class'},
+			{blankLine: 'always', prev: 'block-like', next: '*'},
+			{blankLine: 'always', prev: 'class', next: '*'},
+			{blankLine: 'never', prev: 'case', next: '*'},
+			{blankLine: 'never', prev: '*', next: 'case'}
+		],
 		// Was deprecated in ESLint v4.0.0
 		// and replaced by the padding-line-between-statements rule.
 		'lines-around-directive': 'off',
