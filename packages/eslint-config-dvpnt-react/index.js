@@ -21,33 +21,31 @@ module.exports = {
 	},
 
 	rules: {
+		'global-require': 'error',
+
+		'import/no-dynamic-require': 'error',
+
+		'react/destructuring-assignment': 'off',
 		'react/forbid-prop-types': ['error', {forbid: ['object', 'array']}],
 		'react/jsx-indent': ['error', 'tab'],
 		'react/jsx-indent-props': ['error', 'tab'],
+		'react/jsx-one-expression-per-line': 'off',
 		'react/jsx-props-no-spreading': 'off',
-		'react/static-property-placement': ['error', 'static public field'],
-		'react/state-in-constructor': 'off',
-
 		'react/no-array-index-key': 'off',
 		'react/no-danger': 'off',
-		'react/destructuring-assignment': 'off',
-		'react/jsx-one-expression-per-line': 'off',
+		'react/state-in-constructor': 'off',
+		'react/static-property-placement': ['error', 'static public field'],
 
-		'jsx-a11y/no-autofocus': 'off',
-		'jsx-a11y/no-static-element-interactions': 'off',
 		'jsx-a11y/click-events-have-key-events': 'off',
-
 		// is deprecated, use label-has-associated-control
 		'jsx-a11y/label-has-for': 'off',
-		'jsx-a11y/label-has-associated-control': 'error'
+		'jsx-a11y/label-has-associated-control': 'error',
+		'jsx-a11y/no-autofocus': 'off',
+		'jsx-a11y/no-static-element-interactions': 'off'
 	},
 
 	settings: {
-		'import/resolver': {
-			node: {extensions: ['.js', '.jsx']}
-		},
-		react: {
-			version: 'detect'
-		}
+		'import/resolver': {node: {extensions: ['.js', '.jsx']}},
+		react: {version: 'detect'}
 	}
 };

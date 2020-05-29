@@ -34,6 +34,9 @@ module.exports = {
 		// Errors
 		'no-await-in-loop': 'off',
 
+		// Node
+		'global-require': 'off',
+
 		// Stylistic Issues
 		'array-bracket-newline': ['error', 'consistent'],
 		'array-element-newline': ['error', 'consistent'],
@@ -143,6 +146,7 @@ module.exports = {
 
 		// Imports
 		'import/extensions': ['error', 'never', {ignorePackages: true}],
+		'import/no-dynamic-require': 'off',
 		'import/no-extraneous-dependencies': [
 			'error',
 			{
@@ -158,6 +162,7 @@ module.exports = {
 				groups: [['builtin', 'external', 'internal']],
 				'newlines-between': 'never'
 			}
-		]
+		],
+		'import/prefer-default-export': 'off'
 	}
 };
