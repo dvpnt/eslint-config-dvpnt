@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dvpnt-react",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "eslint config for react dvpnt projects",
   "main": "index.js",
   "author": "Aleksey Timchenko <flegmatik.bel@gmail.com>",
@@ -22,6 +22,6 @@
   },
   "dependencies": {
     "eslint-config-airbnb": "18.1.0",
-    "eslint-config-dvpnt": "4.0.3"
+    "eslint-config-dvpnt": "4.0.4"
   }
 }
