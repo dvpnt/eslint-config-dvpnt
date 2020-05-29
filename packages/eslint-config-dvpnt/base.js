@@ -129,7 +129,6 @@ module.exports = {
 
 		// ES6
 		'no-confusing-arrow': 'off',
-		'object-shorthand': ['error', 'always'],
 		'prefer-destructuring': [
 			'error',
 			{
