@@ -155,6 +155,10 @@ module.exports = {
 				packageDir: './'
 			}
 		],
+		'import/no-unresolved': [
+			'error',
+			{commonjs: true, caseSensitive: true, ignore: ['/static/']}
+		],
 		'import/order': [
 			'error',
 			{
