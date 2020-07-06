@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dvpnt",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "eslint config for dvpnt projects",
   "main": "index.js",
   "author": "Aleksey Timchenko <flegmatik.bel@gmail.com>",
