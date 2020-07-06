@@ -4,11 +4,9 @@ module.exports = {
 	overrides: [{files: '*.jsx'}],
 
 	extends: [
-		'eslint-config-airbnb/rules/react',
-		'eslint-config-airbnb/rules/react-a11y',
-		'eslint-config-airbnb/rules/react-hooks',
-		'eslint-config-dvpnt/base'
-	].map(require.resolve),
+		'eslint-config-airbnb',
+		'eslint-config-dvpnt'
+	],
 
 	env: {
 		commonjs: true,
