@@ -35,7 +35,13 @@ module.exports = {
 		'no-await-in-loop': 'off',
 
 		// Node
-		'global-require': 'off',
+		// Node rules was deprecated in ESLint v7.0.0
+		// and replaced by the node/* rules.
+		'node/global-require': 'off',
+		'no-new-require': 'off',
+		'node/no-new-require': 'error',
+		'no-path-concat': 'off',
+		'node/no-path-concat': 'error',
 
 		// Stylistic Issues
 		'array-bracket-newline': ['error', 'consistent'],

@@ -1,6 +1,8 @@
 module.exports = {
 	parser: require.resolve('babel-eslint'),
 
+	overrides: [{files: '*.jsx'}],
+
 	extends: [
 		'eslint-config-airbnb/rules/react',
 		'eslint-config-airbnb/rules/react-a11y',
@@ -21,7 +23,7 @@ module.exports = {
 	},
 
 	rules: {
-		'global-require': 'error',
+		'node/global-require': 'error',
 
 		'import/no-dynamic-require': 'error',
 
