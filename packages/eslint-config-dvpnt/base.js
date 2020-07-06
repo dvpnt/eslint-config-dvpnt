@@ -1,5 +1,8 @@
 module.exports = {
-	extends: 'airbnb-base',
+	extends: [
+		'airbnb-base',
+		'plugin:node/recommended'
+	],
 
 	env: {es6: true},
 
