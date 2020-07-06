@@ -4,8 +4,10 @@ module.exports = {
 	overrides: [{files: '*.jsx'}],
 
 	extends: [
-		'eslint-config-airbnb',
-		'eslint-config-dvpnt'
+		'eslint-config-airbnb/rules/react',
+		'eslint-config-airbnb/rules/react-a11y',
+		'eslint-config-airbnb/rules/react-hooks',
+		'eslint-config-dvpnt/base'
 	],
 
 	env: {
