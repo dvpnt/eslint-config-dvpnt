@@ -17,6 +17,11 @@ module.exports = {
 	rules: {
 		// Possible Errors
 		'no-console': 'error',
+		'no-restricted-properties': [
+			'error',
+			{object: 'window', property: 'console'},
+			{object: 'global', property: 'console'}
+		],
 		'no-extra-parens': [
 			'error',
 			'all',
