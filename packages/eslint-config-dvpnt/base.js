@@ -4,6 +4,7 @@ module.exports = {
 	],
 
 	plugins: [
+		'pathnames',
 		'node'
 	],
 
@@ -184,7 +185,10 @@ module.exports = {
 				'newlines-between': 'never'
 			}
 		],
-		'import/prefer-default-export': 'off'
+		'import/prefer-default-export': 'off',
+
+		// Pathnames
+		'pathnames/match': ['error', {fileNames: '^[0-9A-Za-z._\\-]+$'}]
 	},
 
 	settings: {
