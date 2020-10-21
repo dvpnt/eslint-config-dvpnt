@@ -100,7 +100,7 @@ module.exports = {
 				ignoreRegExpLiterals: true
 			}
 		],
-		'max-nested-callbacks': ['error', {max: 4}],
+		'max-nested-callbacks': ['error', {max: 5}],
 		'max-params': ['error', {max: 16}],
 		'max-statements-per-line': ['error', {max: 1}],
 		'newline-per-chained-call': 'off',
@@ -117,7 +117,7 @@ module.exports = {
 		],
 		'no-nested-ternary': 'off',
 		'no-plusplus': 'off',
-		'no-restricted-syntax': 'error',
+		'no-restricted-syntax': 'off',
 		'no-tabs': 'off',
 		'no-underscore-dangle': 'off',
 		'object-curly-newline': [
