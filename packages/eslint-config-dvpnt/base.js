@@ -117,6 +117,7 @@ module.exports = {
 		],
 		'no-nested-ternary': 'off',
 		'no-plusplus': 'off',
+		'no-restricted-syntax': 'error',
 		'no-tabs': 'off',
 		'no-underscore-dangle': 'off',
 		'object-curly-newline': [
